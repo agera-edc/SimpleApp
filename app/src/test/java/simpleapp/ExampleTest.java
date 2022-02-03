@@ -12,4 +12,10 @@ class ExampleTest {
         assertEquals(someData, "even");
     }
 
+    @Test
+    public void oddNumber() {
+        String someData = new Example().getSomeData(3);
+        assertEquals(someData, "odd");
+    }
+
 }
