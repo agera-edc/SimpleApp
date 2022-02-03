@@ -18,4 +18,10 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getAnotherGreeting(), "app should have a greeting");
     }
+
+    @Test
+    void appHasHi() {
+        App classUnderTest = new App();
+        assertNotNull(classUnderTest.sayHi(), "hi");
+    }
 }
