@@ -7,15 +7,20 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+    App classUnderTest = new App();
+
     @Test
     void appHasAGreeting() {
-        App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 
     @Test
     void appHasAnotherGreeting() {
-        App classUnderTest = new App();
         assertNotNull(classUnderTest.getAnotherGreeting(), "app should have a second greeting");
+    }
+
+    @Test
+    void test1() {
+        assertEquals(classUnderTest.getAnotherGreeting(), "Greetings!");
     }
 }
