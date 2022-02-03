@@ -5,9 +5,8 @@ package simpleapp;
 
 public class App {
 
-
     public String getGreeting() {
-        return "Hello World!";
+        return "Hello!";
     }
 
     public String getAnotherGreeting() {
@@ -16,6 +15,7 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        System.out.println(new App().getAnotherGreeting());
         System.out.println(new App().getAnotherGreeting());
     }
 }
