@@ -29,3 +29,5 @@ jobs:
 
       - name: CodeCov
         uses: codecov/codecov-action@v2
+        with:
+          path_to_write_report: ./coverage/codecov_report.txt
