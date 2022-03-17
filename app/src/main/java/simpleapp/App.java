@@ -14,6 +14,10 @@ public class App {
         return "Greetings!";
     }
 
+    public String sayHi() {
+        return "Hi!";
+    }
+
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
     }
